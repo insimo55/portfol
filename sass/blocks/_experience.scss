@@ -1,0 +1,98 @@
+.experience{
+    padding-top: 125px;
+    &__header{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 60px;
+    }
+    &__title{
+        margin-bottom: 25px;
+    }
+    &__divider{
+        height: 3px;
+        width: 60px;
+        background-color: $main-color;
+    }
+    .experience__subtitle{
+        position: relative;
+        z-index: 2;
+        @include before_circle_center;
+        margin-bottom: 6px;
+       
+    }
+    &__wrapper{
+        padding-left: 72px;
+        display: grid;
+        grid-template-columns: repeat(2, 417px);
+        grid-auto-flow: column;
+        gap: 0px 150px;
+    }
+    .experience__colum{
+        padding-left: 43px;
+        display: grid;
+        border-left: 2px solid black;
+        row-gap: 45px;
+        grid-template-rows: 30px repeat(2, 129px);
+    }
+    .experience__elem__title{
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 30px;
+        position: relative;
+        top: -15px;
+        @include before_circle;
+        &:before{
+            width: 15px;
+            height: 15px;
+            left: -52px;
+            top: 9px;
+            z-index: 0;
+        }
+    }
+    .experience__elem__header{
+        position: relative;
+        padding-left: 15px;
+        margin-top: -12px;
+        margin-bottom: 12px;
+        display: flex;
+        img{
+            position: absolute;
+            margin-right: 20px;
+            top: 15px;
+            left: 20px;
+        }
+        @include before_circle;
+        &:before{
+            top: 0%;
+        }
+        &__divider{
+            position: absolute;
+            height: 2px;
+            width: 45px;
+            background-color: black;
+            left: -12%;
+            top: 45%;
+        }
+        &__text{
+            margin-left: 15%;
+        }
+        
+    }
+    .experience__elem__subtitle{
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .experience__elem__subsubtitle{
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: normal;
+
+    }
+    .experience__elem__descr{
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: normal;
+    }
+}

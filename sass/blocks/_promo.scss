@@ -1,0 +1,100 @@
+.promo_1{
+    min-height: 100vh;
+    position: relative;
+    background: url('../img/img.jpg') no-repeat 70%/cover;
+    padding-top: 205px;
+    transition: 1s all;
+}
+.promo_2{
+    min-height: 100vh;
+    position: relative;
+    background: url('../img/img1.jpg') no-repeat 70%/cover;
+    padding-top: 205px;
+    transition: 1s all;
+}
+.promo_3{
+    min-height: 100vh;
+    position: relative;
+    background: url('../img/img2.jpg') no-repeat 70%/cover;
+    padding-top: 205px;
+    transition: 1s all;
+}
+
+.promo {
+    min-height: 100vh;
+    position: relative;
+    background: url('../img/main_bg.png') no-repeat 70%/cover;
+    padding-top: 205px;
+    transition: 1s all;
+    &__title{
+        width: 535px;
+        margin-top: 10px;
+    }
+    &__subtitle{
+        position: relative;
+        padding-left: 10px;
+        z-index: 2;
+        @include before_circle;
+    }
+    &__btns{
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 250px;
+    }
+    &__link{
+        position: relative;
+        color: #000;
+        font-weight: bold;
+        &:hover{
+            text-decoration: none;
+            color: #000;
+        }
+        &:nth-child(2){
+            &:after{
+                display: block;
+                position: absolute;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background-color: red;
+                content: "";
+                transition: 0.3s all;
+            }
+            &:hover{
+                color: #000;
+                text-decoration: none;
+                &:after{
+                    width: 100%;
+                }
+            }
+        }
+        
+    }
+}
+.carousel__inner{
+    position: relative;
+    width: 750px;
+    margin: 0 auto;
+    img{
+        width: 100%;
+    }
+}
+.slick-prev, .slick-next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -66px;
+    border: none;
+    background: none;
+    img{
+        width: 31px;
+        height: 50px;
+    }
+}
+.slick-next{
+    right: -66px;
+    left: auto;
+}
+

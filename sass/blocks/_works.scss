@@ -1,0 +1,54 @@
+#p_1{
+    grid-area: p_1;
+}
+#p_2{
+    grid-area: p_2;
+}
+#p_3{
+    grid-area: p_3;
+}
+#p_4{
+    grid-area: p_4;
+}
+#p_5{
+    grid-area: p_5;
+}
+#p_6{
+    grid-area: p_6;
+}
+
+
+.works{
+    padding-top: 120px;
+    &__header{
+        margin-bottom: 60px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__subtitle{
+        position: relative;
+        margin-bottom: 6px;
+        @include before-circle-center;
+    }
+    &__title{
+        margin-bottom: 25px;
+    }
+    &__wrapper{
+        display: grid;
+        grid-template-columns: repeat(4, 280px);
+        grid-template-rows: repeat(2, 280px);
+        grid-auto-rows: 280px;
+        gap: 5px;
+        grid-template-areas: 
+        'p_1 p_2 p_3 p_4'
+        'p_5 p_6 p_6 p_4';
+    }
+    &__elem{
+        transition: all 0.5s;
+        &:hover{
+            box-shadow: 4px 4px 4px 4px rgba($color: #130606, $alpha: .6);
+            filter: blur(4px);
+        }
+    }
+}

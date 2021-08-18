@@ -1,0 +1,82 @@
+#photo{
+    grid-area: photo;
+    img{
+        width: 400px;
+        height: 600px;
+    }
+}
+#about{
+    grid-area: about;
+}
+#skills{
+    grid-area: skills;
+    display: grid;
+    grid-template-columns: repeat(2, 285px);
+}
+
+
+.about{
+    padding-top: 120px;
+    &__subtitle{
+        position: relative;
+        padding-left: 10px;
+        z-index: 2;
+        @include before_circle;
+    }
+    &__wrapper{
+        display: grid;
+        grid-template-columns: 400px 570px;
+        grid-template-rows: repeat(2, 300px);
+        grid-template-areas: 
+        "photo about"
+        "photo skills";
+        gap: 0px 70px;
+    }
+   
+    .about__divider{
+        height: 3px;
+        width: 60px;
+        background-color: $main-color;
+    }
+    &__descr{
+        margin-top: 20px;
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: normal;
+
+    }
+    .skills__elem{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .skills__text{
+        width: 200px;
+    }
+    .skills__title{
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: bold;
+        margin-bottom: 6px;
+    }
+    .skills__descr{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .skills__img{
+        position: relative;
+        z-index: 2;
+        padding-left: 10px;
+        @include before_circle;
+        &:before{
+            top: -5%;
+        }
+        img{
+            position: absolute;
+            left: 25px;
+            top: 15px;
+        }
+    }
+}
+
