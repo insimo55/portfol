@@ -47,9 +47,9 @@
     }
     .skills__elem{
         position: relative;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 40px 200px;
+        column-gap: 30px;
     }
     .skills__text{
         width: 200px;

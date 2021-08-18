@@ -40,14 +40,20 @@
         &__wrapper{
             padding: 0 10px 0 10px;
             grid-template-columns: 300px;
-            grid-template-rows: repeat(3, 400px);
+            row-gap: 40px;
+            grid-template-rows: repeat(3, 300px);
             grid-template-areas: 
             "photo"
             "about"
             "skills";
         }
+        &__subtitle{
+            margin-bottom: 25px;
+        }
         &__title{
             font-size: 24px;
+            line-height: 39px;
+            margin-bottom: 15px;
         }
         &__descr{
             font-size: 14px;
@@ -56,6 +62,7 @@
     }
     #skills{
         grid-template-columns: 300px;
+        row-gap: 15px;
     }
     #photo{
         img{
@@ -64,7 +71,32 @@
             height: 100%;
         }
     }
-    #about{
-        margin-top: 40px;
+    .experience{
+        .experience__colum{
+            row-gap: 74px;
+            grid-template-rows: 30px repeat(2, 200px);
+        }
+        &__subtitle{
+            margin-bottom: 25px;
+        }
+        &__title{
+            font-size: 24px;
+            line-height: 39px;
+            margin-bottom: 15px;
+        }
+        &__wrapper{
+            grid-template-columns: 300px;
+            grid-template-rows: repeat(2, 450px);
+            padding-left: 15px;
+            gap: 60px 0px;
+        }
+       
+    }
+    
+    .skill{
+        &__title{
+            font-size: 26px;
+            line-height: 39px;
+        }
     }
 }
