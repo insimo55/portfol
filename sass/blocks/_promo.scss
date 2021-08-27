@@ -26,6 +26,9 @@
     background: url('../img/main_bg.png') no-repeat 70%/cover;
     padding-top: 205px;
     transition: 1s all;
+    &__wrapper{
+        padding-left: 10%;
+    }
     &__title{
         width: 535px;
         margin-top: 10px;

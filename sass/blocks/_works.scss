@@ -45,7 +45,7 @@
         'p_5 p_6 p_6 p_4';
     }
     &__elem{
-        transition: all 0.5s;
+        transition: all 0.35s;
         &:hover{
             box-shadow: 4px 4px 4px 4px rgba($color: #130606, $alpha: .6);
             filter: blur(4px);

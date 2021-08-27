@@ -1,3 +1,14 @@
+#name{
+    grid-area: name;
+}
+#text{
+    grid-area: text;
+}
+#email{
+    grid-area: email;
+}
+
+
 .contact{
     padding: 120px 0 90px 0;
     &__wrapper{
