@@ -4,6 +4,15 @@
     background: url('../img/img.jpg') no-repeat 70%/cover;
     padding-top: 205px;
     transition: 1s all;
+    &__title{
+        color: #fff;
+    }
+    &__subtitle{
+        color: rgb(105, 105, 105);
+    }
+    &__link{
+        color: #fff;
+    }
 }
 .promo_2{
     min-height: 100vh;
